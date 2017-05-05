@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<title>{$company_name}-{$info['title']}产品详情</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/fonts.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/main.css">
+<link rel="icon" type="image/png" href="__root__/logo.png">
+<script type="text/javascript">
+if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+	var version = parseFloat(RegExp.$1);
+	if(version>2.3){
+		var phoneScale = parseInt(window.screen.width)/640;
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+}else{
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+</script>
+<script type="text/javascript" src="__JS__/inc/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="__JS__/main-fx.js"></script>
+<script type="text/javascript" src="__JS__/app/product.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="head" id="head"><p>产品详情</p><p class="cn">Product details</p></div>
+    {$info['content']}
+    <!-- <div class="pic_product" id="pic_product"><img src="__IMG__/product.jpg" alt="" class="img_responsive"></div>
+    <div class="topic_product" id="topic_product">xtcs 493<span>小型、实用的 1,3kW 汽油油锯</span></div>
+    <div class="txt_product" id="txt_product"><p>喜泰自1929年制造世界上第一台油锯以来，一直在油锯产品上保持着
+技术领先。喜泰油锯不仅以质量稳定可靠，经久耐用而著称，型号齐全的油锯产品给用户以充分的选择，不管是简单的修枝还是专业的林业采伐，都有适合的油锯型号能充分满足客户的工作需求</p></div>
+<div class="title_product" id="gs">Introduction<span>概述</span></div>
+<div class="txt_product" id="title_gs">
+<h3 class="intro">版本</h3>
+<p>MS170,导板长度 12"R/30cm<span class="price">￥2,450* </span><br />
+MS170,导板长度 14"R/35cm<span class="price">￥2,450* </span></p>
+<h3 class="intro">产品变更</h3>
+<p>MS 211 C-BE带锯链快速张紧装置（B）和ErgoStart (E) <br />MS 211 C-BE，带 Picco Duro带 Picco Duro 锯链<br />MS 211，带 Picco Duro带 Picco Duro  </p>
+</div>
+<div class="title_product" id="pa">parameter<span>技术参数</span></div>
+<div class="para" id="para">
+<table class="para">
+	<tr>
+    <td width="57%">功率 kW/hp</td><td>1.7/2.3</td>
+    </tr>
+    <tr>
+    <td>动力重量比 kg/kW</td><td>2.5 </td>
+    </tr>
+	<tr>
+    <td>声功率 dB(A) 1)</td><td>110 </td>
+    </tr>
+    <tr>
+    <td>声压等级 dB(A) 1)</td><td>99</td>
+    </tr>
+    <tr>
+    <td>左/右震动值 m/s² 2)</td><td>3.5/3.2</td>
+    </tr>
+    <tr>
+    <td>排量 cm³</td><td>35.2</td>
+    </tr>
+    <tr>
+    <td>复新科技 Oilomatic 锯链型号</td><td>Picco Micro 3 (PM3)</td>
+    </tr>
+    <tr>
+    <td>左/右震动值 m/s² 2)</td><td>3.5/3.2</td>
+    </tr>
+    <tr>
+    <td>排量 cm³</td><td>35.2</td>
+    </tr>
+    <tr>
+    <td>喜泰 Oilomatic 锯链型号</td><td>Picco Micro 3 (PM3) </td>
+    </tr>
+</table>
+</duv>
+<div class="title_product" id="char">SELLING POINT<span>产品卖点</span></div>
+<div class="txt_product" id="txt_char">
+<h3>防震系统</h3>
+<p>动力设备把手位置上的长期强烈震动会导致手和胳膊血流不畅。因此复新科技研制了一种高品质的防震系统。带有防震系统的动力设备可以明显地降低由发动机和处理工具在把手位置上产生的震动。（见插图）</p>
+<h3>复新科技 Ematic 系统</h3>
+<p>复新科技 Ematic 系统由 Ematic 导板、Oilomatic 锯链和流量可调或降低了供给量的油泵组成。特殊设计的导板和锯链确保每滴链油都能进入需要润滑的位置。油消耗量也因此降低了最多 50%。</p>
+<h3>补偿式化油器</h3>
+<p>复新科技补偿式化油器是一个化油器中的控制单元，负责保证在空气过滤器污染情况持续增加时，在长时间内恒定地保持发动机功率、废气质量和燃油消耗量。只有在感觉到功率下降时，才必须清洁空气过滤器。这样也可以在非常长的工作周期内不作保养。（见插图）</p>
+</div> -->
+<div class="title_product">CONTACT<span>联系我们</span></div>
+<div class="txt_contactus">
+    <p>您是否有关于我们产品或售后服务的任何问题？只需通过以下方式向我们致电：</p>
+    <if condition="$comp eq 1">
+    <a href="tel:4001581088" class="phone">400-158-1088</a>
+    <a href="mailto:cntt@china-titan.cn" class="mail">cntt@china-titan.cn</a>
+    <elseif condition="$comp eq 2" />
+    <a href="tel:4001581088" class="phone">400-158-1089</a>
+    <a href="mailto:cntt@china-titan.cn" class="mail">cntt@china-titan.cn</a>
+    </if> 
+</div>
+</div>
+</body>
+</html>

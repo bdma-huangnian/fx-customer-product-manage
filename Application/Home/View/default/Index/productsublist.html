@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no">
+<title>{$company_name}-产品列表</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/fonts.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/main.css">
+<style>
+    .gl {font-size:22px !important;}
+    .txt_pro p{line-height:40px;}
+</style>
+<link rel="icon" type="image/png" href="__root__/logo.png">
+<script type="text/javascript">
+if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+	var version = parseFloat(RegExp.$1);
+	if(version>2.3){
+		var phoneScale = parseInt(window.screen.width)/640;
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+}else{
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+</script>
+<script type="text/javascript" src="__CSS__/inc/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="__CSS__/main-fx.js"></script>
+<script type="text/javascript" src="__CSS__/app/product_sublist.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="head"><p>产品列表</p><p class="cn">Product list</p></div><!--head-->
+    <div class="pro_sublist">
+        <ul id="pro_sublist">
+            <volist name="prolist" id="item">
+            	<li><a href="{:U('Index/product', array('id' => $item['id'], 'comp' => 'comp'))}" class="clearfix">
+                <img src="{$item.cover_id|get_cover='path'}" alt="" class="pic_pro2">
+                <div class="txt_pro">
+                    <p>引擎型号<span>{$item.title}</span></p>
+                    <p>引擎排量<span>{$item.yqpl}CC</span></p>
+                    <p>引擎功率<span class="gl">{$item.yqgl}rpm</span></p>
+                    <p>引擎重量<span>{$item.yqweight}kgs</span></p>
+                </div>
+                <div class="arrow3"></div>
+                </a></li>
+            </volist>
+        </ul>
+    </div><!--prolist-->
+</div><!--container-->
+</body>
+</html>

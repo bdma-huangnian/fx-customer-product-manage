@@ -1,0 +1,60 @@
+<div class="height-60"> </div>
+     <!-- footer Section -->
+    <div class="footer-bottom">
+  <div class="container">
+  <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="f-b">{:C('WEB_SITE_COPYRIGHT')}-{:C('WEB_SITE_ICP')}</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+  <div class="footer-widget-social">
+    <ul>
+      <li><a data-tooltip="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a data-tooltip="Linkedin" href="#"><i class="fa fa-linkedin"></i> </a></li>
+      <li><a data-tooltip="twitter" href="#"><i class="fa fa-twitter"></i></a></li>           
+      <li><a data-tooltip="Pinterest" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+      <li><a data-tooltip="Google-Plus" href="#"><i class="fa fa-google-plus"></i> </a></li>      
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<a href="javascript:;" class="scrollTop back-to-top" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
+    
+<block name="script">
+    <script src="__CSS__/bower_components/flexslider/jquery.flexslider-min.js"></script>
+    <script src="__CSS__/bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- jQuery --> 
+    <script src="__JS__/custom.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="__JS__/bootstrap.min.js"></script>
+   
+    <!-- Scrolling Nav JavaScript -->
+    <script src="__JS__/jquery.easing.min.js"></script>
+    <script src="__JS__/scrolling-nav.js"></script>
+    <script src="__JS__/main.js"></script>
+     <script src="__CSS__/bower_components/owl-carousel/owl.carousel.js"></script>
+    <script>
+        $(function(){
+            $(".newfloat li.litel").hover(function(){
+                var _this = $(this);
+                _this.removeClass("hover").stop().animate({left : - 184}, 400)
+            }, function(){
+                var _this = $(this);
+                _this.stop().animate({left : 0}, 400, function(){
+                    _this.addClass("hover")
+                })
+            })
+            $(".newfloat li.lia").hover(function(){
+                $(this).removeClass("hover").stop().animate({marginLeft : - 10}, 400)
+            }, function(){
+                var _this = $(this);
+                _this.stop().animate({marginLeft : 0}, 400, function(){
+                    _this.addClass("hover")
+                })
+            })
+
+
+        })
+    </script>
+</block>
